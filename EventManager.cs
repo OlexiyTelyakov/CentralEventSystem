@@ -97,10 +97,6 @@ namespace KiwiKaleidoscope
             {
                 Instance.eventListeners[eventType][i].method.Invoke(Instance.eventListeners[eventType][i].target, new[] { eventInfo });
             }
-            //foreach(Callback callback in Instance.eventListeners[eventType])
-            //{
-            //    callback.method.Invoke(callback.target, new[] { eventInfo });
-            //}
         }
 
         private class Callback 
